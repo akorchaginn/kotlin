@@ -15,7 +15,6 @@ fun main (args: Array<String>) {
     print("$hello $aplana!")
 
 //Задание 3
-
     var five: Char = '5'
 
     var fiveString = five.toString()
@@ -27,4 +26,10 @@ fun main (args: Array<String>) {
     var fiveLong = fiveString.toLong()
 
     println("\n" + fiveShort + (fiveByte + fiveLong * fiveInt) / fiveDouble + fiveFloat)
+
+//Задание 4
+    println("Hi! Please, enter your name:")
+    var userName: String? = readLine()
+
+    println("Hi $userName!")
 }
