@@ -36,8 +36,18 @@ fun main (args: Array<String>) {
 //Задание 5
     var alphabet = 'z' downTo  'a'
 
-    println("Please, enter the number of the letter you want to see.")
+    println("Please, enter the number of the letter you want to see:")
     var alphabetElement: String? = readLine()
 
     println(alphabet.elementAt(alphabetElement?.toInt()?:0))
+
+//Задание 6
+    println("Please, enter the a number:")
+    var a: String? = readLine()
+
+    println("Please, enter the b number:")
+    var b: String? = readLine()
+
+    var result = a?.toInt()?:0 > b?.toInt()?:0
+    println(result)
 }
