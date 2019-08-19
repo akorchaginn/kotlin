@@ -32,4 +32,12 @@ fun main (args: Array<String>) {
     var userName: String? = readLine()
 
     println("Hi $userName!")
+
+//Задание 5
+    var alphabet = 'z' downTo  'a'
+
+    println("Please, enter the number of the letter you want to see.")
+    var alphabetElement: String? = readLine()
+
+    println(alphabet.elementAt(alphabetElement?.toInt()?:0))
 }
