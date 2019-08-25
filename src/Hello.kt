@@ -57,4 +57,7 @@ fun main (args: Array<String>) {
     val quiz: Quiz = Quiz()
     quiz.quiz()
     quiz.getResult()
+
+//Задание 8
+    deposite()
 }
