@@ -1,3 +1,5 @@
+import quiz.Quiz
+
 fun main (args: Array<String>) {
     println("Hello, world)")
 
@@ -50,4 +52,9 @@ fun main (args: Array<String>) {
 
     var result = a?.toInt()?:0 > b?.toInt()?:0
     println(result)
+
+//Задание 7
+    val quiz: Quiz = Quiz()
+    quiz.quiz()
+    quiz.getResult()
 }
