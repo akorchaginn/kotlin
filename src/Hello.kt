@@ -60,4 +60,7 @@ fun main (args: Array<String>) {
 
 //Задание 8
     deposite()
+
+//Задание 9
+    countries()
 }
