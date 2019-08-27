@@ -12,7 +12,7 @@ fun cities(){
         println()
         println("0 - Выход на уровень выше")
         println("00 - Выход из приложения")
-        println("Выберите пункт меню:")
+        print("Выберите пункт меню:")
 
         i = readLine().toString()
         when(i){
