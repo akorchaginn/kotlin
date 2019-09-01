@@ -12,6 +12,7 @@ fun main(){
         println("5 - Города")
         println("6 - Рабочие места")
         println("7 - Високосный год")
+        println("8 - Сколько сотрудников?")
         println()
         println("0 - Выход")
         println("Выберите пункт меню:")
@@ -45,6 +46,11 @@ fun main(){
             "7" -> {
                 val whatIsYear = WhatIsYear()
                 println(whatIsYear.isGregorianYear())
+            }
+
+            //Задание 13
+            "8" -> {
+                println("Передано " + employeeCount("Иванов", "Ли", "Бернар", "Смит", "Абрамов", "Ким").toString() + " фамилий.")
             }
         }
     }
