@@ -3,7 +3,7 @@ import kotlin.system.exitProcess
 fun workPlace() {
     var i = "9999"
 
-    var workPlaces: MutableMap<String, String> = mutableMapOf("A1" to "Иванов Иван", "C5" to "Петров Пётр", "D1" to "Сидоров Сидор")
+    val workPlaces: MutableMap<String, String> = mutableMapOf("A1" to "Иванов Иван", "C5" to "Петров Пётр", "D1" to "Сидоров Сидор")
 
     while (i!="0"){
         println("1 - Добавить/заменить сотрудника на рабочее место")

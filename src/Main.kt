@@ -11,6 +11,7 @@ fun main(){
         println("4 - Массив стран")
         println("5 - Города")
         println("6 - Рабочие места")
+        println("7 - Високосный год")
         println()
         println("0 - Выход")
         println("Выберите пункт меню:")
@@ -39,6 +40,12 @@ fun main(){
 
             //Задание 11
             "6" -> workPlace()
+
+            //Задание 12
+            "7" -> {
+                val whatIsYear = WhatIsYear()
+                println(whatIsYear.isGregorianYear())
+            }
         }
     }
 }
