@@ -15,6 +15,7 @@ fun main(){
         println("8 - Сколько сотрудников?")
         println("9 - Информация о сотруднике")
         println("10 - Лямбда")
+        println("11 - Квадратный корень из 16")
         println()
         println("0 - Выход")
         println("Выберите пункт меню:")
@@ -66,6 +67,12 @@ fun main(){
             //Задание 15
             "10" -> {
                 lambda()
+            }
+
+            //Задание 16
+            "11" -> {
+                val x1: Double = 16.0
+                println(x1.squareRoot())
             }
         }
     }
