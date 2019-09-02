@@ -74,6 +74,17 @@ fun main(){
                 val x1: Double = 16.0
                 println(x1.squareRoot())
             }
+
+            //Задание 17
+            "12" -> {
+                val aircraft1 = Aircraft()
+                aircraft1.manufacturer = "Boeing"
+                aircraft1.model = "747-400"
+                aircraft1.range = 14205
+                aircraft1.tankCapacity = 241140
+
+                println("Самолёт: ${aircraft1.manufacturer} ${aircraft1.model}, расход топлива на 100км: ${aircraft1.fuelPer100}")
+            }
         }
     }
 }
