@@ -1,5 +1,5 @@
 package airline
 
-interface Passenger {
+interface PassengerInterface {
     var seats: Int
 }

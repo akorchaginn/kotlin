@@ -1,5 +1,4 @@
-import airline.CargoAircraft
-import airline.PassengerAircraft
+import airline.AircraftMenu
 import quiz.Quiz
 
 fun main(){
@@ -18,7 +17,7 @@ fun main(){
         println("9 - Информация о сотруднике")
         println("10 - Лямбда")
         println("11 - Квадратный корень из 16")
-        println("12 - Авиакомпания 1")
+        println("12 - Авиакомпания. Информация о самолётах")
         println("13 - Data class")
         println()
         println("0 - Выход")
@@ -79,16 +78,11 @@ fun main(){
                 println(x1.squareRoot())
             }
 
-            //Задание 17-22
+            //Задание 17-22, 24
             "12" -> {
-                val cargoAircraft = CargoAircraft("Boeing", "747-8 Freighter", 8130, 241140)
-                cargoAircraft.cargoCapacity = 140000
+                val aircraftMenu = AircraftMenu()
+                aircraftMenu.menu()
 
-                val passengerAircraft = PassengerAircraft("Airbus", "A330", 13400, 139090)
-                passengerAircraft.seats = 293
-
-                println(cargoAircraft.info())
-                println(passengerAircraft.info())
             }
 
             //Задания 23
