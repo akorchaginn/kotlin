@@ -6,7 +6,8 @@ class CargoAircraft(
             _range: Int,
             _tankCapacity: Int
             ): Aircraft(_manufacturer, _model, _range, _tankCapacity) {
-    var cargoCapacity: Int = 0
+    var cargoCapacity = 0
+
 
     override fun info(): String {
         return super.info() + ", грузоподъёмность $cargoCapacity кг."

@@ -78,7 +78,7 @@ fun main(){
                 println(x1.squareRoot())
             }
 
-            //Задание 17, 18, 19
+            //Задание 17-22
             "12" -> {
                 val cargoAircraft = CargoAircraft("Boeing", "747-8 Freighter", 8130, 241140)
                 cargoAircraft.cargoCapacity = 140000

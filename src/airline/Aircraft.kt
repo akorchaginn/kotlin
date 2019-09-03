@@ -1,11 +1,11 @@
 package airline
 
 abstract class Aircraft(_manufacturer: String, _model: String, _range: Int, _tankCapacity: Int) {
-    private var manufacturer: String = _manufacturer
-    private var model: String = _model
-    private var range: Int = _range
-    private var tankCapacity: Int = _tankCapacity
-    private val fuelPer100: Double
+    protected var manufacturer: String = _manufacturer
+    protected var model: String = _model
+    protected var range: Int = _range
+    protected var tankCapacity: Int = _tankCapacity
+    protected val fuelPer100: Double
         get() = (tankCapacity.toDouble() / range.toDouble() * 100)
 
     open fun info(): String{
