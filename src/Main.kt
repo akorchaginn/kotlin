@@ -1,4 +1,4 @@
-import airline.Aircraft
+import airline.CargoAircraft
 import airline.PassengerAircraft
 import quiz.Quiz
 
@@ -37,7 +37,7 @@ fun main(){
             }
 
             //Задание 8
-            "3" -> deposite()
+            "3" -> deposit()
 
             //Задание 9
             "4" -> countries()
@@ -74,18 +74,19 @@ fun main(){
 
             //Задание 16
             "11" -> {
-                val x1: Double = 16.0
+                val x1 = 16.0
                 println(x1.squareRoot())
             }
 
             //Задание 17, 18, 19
             "12" -> {
-                val aircraft1 = Aircraft("Boieng", "747-400", 14205, 241140)
+                val cargoAircraft = CargoAircraft("Boeing", "747-8 Freighter", 8130, 241140)
+                cargoAircraft.cargoCapacity = 140000
 
                 val passengerAircraft = PassengerAircraft("Airbus", "A330", 13400, 139090)
                 passengerAircraft.seats = 293
 
-                println(aircraft1.info())
+                println(cargoAircraft.info())
                 println(passengerAircraft.info())
             }
         }

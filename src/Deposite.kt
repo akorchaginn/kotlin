@@ -1,6 +1,6 @@
 import kotlin.math.roundToInt
 
-fun deposite() {
+fun deposit() {
     print("Введите срок вклада: ")
     val periodS: String? = readLine()
 

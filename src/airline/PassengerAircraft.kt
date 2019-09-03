@@ -10,6 +10,6 @@ class PassengerAircraft(
     override var seats: Int = 0
 
     override fun info(): String {
-        return super.info() + ", число мест: $seats"
+        return super.info() + ", число мест: $seats."
     }
 }
