@@ -1,10 +1,14 @@
 package airline
 
-class Aircraft(_manufacturer: String, _model: String, _range: Int, _tankCapacity: Int) {
+open class Aircraft(_manufacturer: String, _model: String, _range: Int, _tankCapacity: Int) {
     var manufacturer: String = _manufacturer
     var model: String = _model
     var range: Int = _range
     var tankCapacity: Int = _tankCapacity
     val fuelPer100: Double
         get() = (tankCapacity.toDouble() / range.toDouble() * 100)
+
+    open fun info(): String{
+        return "Самолёт: $manufacturer $model, расход топлива на 100км: $fuelPer100"
+    }
 }

@@ -1,4 +1,5 @@
 import airline.Aircraft
+import airline.PassengerAircraft
 import quiz.Quiz
 
 fun main(){
@@ -77,10 +78,15 @@ fun main(){
                 println(x1.squareRoot())
             }
 
-            //Задание 17, 18
+            //Задание 17, 18, 19
             "12" -> {
                 val aircraft1 = Aircraft("Boieng", "747-400", 14205, 241140)
-                println("Самолёт: ${aircraft1.manufacturer} ${aircraft1.model}, расход топлива на 100км: ${aircraft1.fuelPer100}")
+
+                val passengerAircraft = PassengerAircraft("Airbus", "A330", 13400, 139090)
+                passengerAircraft.seats = 293
+
+                println(aircraft1.info())
+                println(passengerAircraft.info())
             }
         }
     }
