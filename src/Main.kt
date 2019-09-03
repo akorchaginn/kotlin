@@ -19,6 +19,7 @@ fun main(){
         println("10 - Лямбда")
         println("11 - Квадратный корень из 16")
         println("12 - Авиакомпания 1")
+        println("13 - Data class")
         println()
         println("0 - Выход")
         println("Выберите пункт меню:")
@@ -88,6 +89,17 @@ fun main(){
 
                 println(cargoAircraft.info())
                 println(passengerAircraft.info())
+            }
+
+            //Задания 23
+            "13" -> {
+                val car1 = Car("Audi A6", "White", "А123БВ")
+                val car2 = Car("Mercedes C180", "Red", "О555ОО")
+                val car3 = Car("Lada Kalina", "Yellow", "П001ВВ")
+
+                println(car1.toString())
+                println(car2.toString())
+                println(car3.toString())
             }
         }
     }
